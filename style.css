@@ -1,15 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: Inter, sans-serif;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f0f0f0;
-    margin: 0;
+    background-color: #ececec;
 }
 
 .container {
+    display: flex;
     text-align: center;
+    width: auto;
+    height: auto;
     background: white;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -17,9 +22,83 @@ body {
 }
 
 .controls {
+    margin: 1%;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     margin-bottom: 20px;
+}
+.box {
+    display: flex;
+    width: 300px;
+    height: 15vh;
+    margin: 1rem;
+    border-radius: 5rem;
+    font-size: 18px;
+    width: 150px;
+    height: 25px;
+    transition: 350ms;
+}
+.box input{
+    padding: 2%;
+    width: 60%;
+    border: none;
+    background-color: #00000034;
+    color: rgb(255, 255, 255);
+    height: 3vh;
+    border-radius: 5rem;
+    transition: 350ms;
+}
+
+.box label{
+    font-size: 12px;
+    margin-right: 5px;
+    transition: 350ms;
+
+}
+.box select{
+    padding: 2%;
+    border: none;
+    background-color: #00000034;
+    color: rgb(255, 255, 255);
+    height: 3vh;
+    border-radius: 5rem;
+    transition: 350ms;
+
+}
+#toggleGrid{
+    background-color: #599fce;
+    color: white;
+    border: none;
+    border-radius: 1rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    cursor: pointer;
+}
+#toggleGrid:hover{
+    transition: 350ms;
+    background-color: #477ea3;
+    transform: scale(0.95);
+}
+#launch{
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 1rem;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+
 }
 
 canvas {
-    border: 1px solid black;
+    padding-top: 5%;
+    border: 1px solid transparent;
 }
